@@ -11,6 +11,7 @@
   --portfolio-brd: #eeeeee;
   --icon-gray: #afb1b8;
   --soc-link-opacity: rgba(255, 255, 255, 0.1);
+  --business-subtitle-bg: rgba(47, 48, 58, 0.8);
 }
 
 /*------reset------*/
@@ -127,7 +128,7 @@ img {
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 100%;
+  width: 100%; 
   height: 4px;
   content: "";
 
@@ -238,6 +239,9 @@ img {
 .business-item + .business-item {
   margin-left: 30px;
 }
+.business-item {
+  position: relative;
+}
 .business-title {
   margin-bottom: 50px;
   text-align: center;
@@ -247,6 +251,22 @@ img {
 }
 .business-list {
   display: flex;
+}
+.business-subtitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%; 
+  height: 70px;
+
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 1.14;
+  color: var(--white);
+  background-color: var(--business-subtitle-bg);
 }
 
 /*------team------*/
